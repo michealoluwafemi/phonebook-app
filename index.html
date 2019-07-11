@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>MicO - Phonebook App</title>
+        <link href="index.css" rel="stylesheet" type="text/css" /> 
+    </head>
+    
+    <body>
+        <!--div carrying entire screen of the app -->
+    	<div id="main">
+
+            <!--phone screen-->
+            <div id="phone-container">
+                <!--the app bar -->
+                <div id="topBar">
+                    <div id="title">
+                        <p>MicO<span style="float: right;" class="total">20 Contacts</span></p>
+                    </div>
+                    <div id="topBarContent">
+                         <ul>
+                            <li style="margin-left: 30px;">Phonebook</li>
+                            <li style="margin-left: 30px;"><button id="showContacts">Show</button></li>
+                            <li><button id="addForm">Add</button></li>
+                         </ul>
+                    </div>
+                </div>
+                <!--app bar end-->
+
+                <!--contact list-->
+                <div id="contact-list">
+                    <div id="search-form">
+                        <!-- input form to search contact -->
+                        <form>
+                            <input placeholder="Search Contact" type="text" class="search" />
+                        </form>
+                        <!--end-->
+                    </div>
+                    
+                    <ul class="lists">
+                        <!-- <li class="lis">
+                            <span class="fullName">Abass Adamo</span> 
+                            <br>
+                            <span class="num">08090887777</span>
+                            <span class="hidden">Email</span>
+                            <div class="action-buttons">
+                                <button class="small">call</button><button class="small btn-edit">edit</button><button class="small btn-del">del</button>
+                            </div>
+                        </li>
+                        <li class="lis">
+                            <span class="fullName">Adisa Micheal</span>
+                            <br>
+                            <span class="num">07087889988</span>
+                            <span class="hidden">Email</span>
+                            <div class="action-buttons">
+                                <button class="small">call</button><button class="small btn-edit">edit</button><button class="small btn-del">del</button>
+                            </div>
+                        </li>
+                        <li class="lis">
+                            <span class="fullName">Femi Micheal</span> 
+                            <br>
+                            <span class="num">08100131944</span>
+                            <span class="hidden">Email</span>
+                            <div class="action-buttons">
+                                <button class="small">call</button><button class="small btn-edit">edit</button><button class="small btn-del">del</button>
+                            </div>
+                        </li> -->
+                    </ul>
+
+                </div>
+                                        
+                <!--end-->
+                <!-- add new contact form -->
+                <div id="form">
+                    <form id="create">
+                        <div>
+                            <select id="tosave">
+                                <option value="sim 1">Sim 1</option>
+                                <option value="sim 2">Sim 2</option>
+                                <option value="gmail">Linked Gmail</option>
+                            </select>
+                        </div>
+                        <div id="box">
+                            <input placeholder="First Name" type="text" id="fName" />
+                            <div id="img"><img src="user.png" /></div>
+                        </div>
+                        <div id="box">
+                            <input placeholder="Last Name" type="text" id="lName" style="margin-left: 30px;" />
+                        </div>
+                        <div id="box">
+                            <input placeholder="Email Address" type="email" id="email" />
+                            <div id="img"><img src="mail-box.png" /></div>
+                        </div>
+                        <div id="box">
+                            <input placeholder="Phone" type="text" id="pNo" />
+                            <div id="img"><img src="phone.png" /></div>
+                        </div>
+                        <button type="button" id="saveContact">Save</button>
+                        <input id="toDel" class="hidden" />
+                        <button type="button" class="hidden saveEdited">Edit</button>
+                    </form>
+                </div>
+                <!-- add new contact form end-->
+
+    		</div>   
+    	</div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        
+    </body>
+</html>

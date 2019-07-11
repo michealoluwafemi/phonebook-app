@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>MicO</title>
+    </head>
+    
+    <body>
+        Body, not in box
+        <!--div carrying entire screen of the app -->
+        <div>
+            Some texts
+        	<div id="main">
+                Main Div...
+                <div>Outer Div</div>
+                <div>Inner Div...</div>
+                <span>Hello World</span> 
+    	   </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("span").parent().css({"color": "blue", "border": "2px solid blue"});
+            });
+
+        </script>
+    </body>
+</html>
